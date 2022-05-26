@@ -1,3 +1,37 @@
+body{
+  background-color: #15202B;
+}
+
+.container{
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.main{
+  display: flex;
+  justify-content: space-between;
+}
+
+ul{
+  list-style: none;
+}
+
+.feed{
+  border: 1px solid #38444d;
+  width: -webkit-fill-available;
+  height: 99vh;
+}
+
+.menu_link{
+  color: white;
+  padding: 12px;
+  border-radius: 9999px;
+}
+
+.menu_link:hover{
+  background-color: #f7f9f91a;
+}
+
 .App {
   text-align: center;
 }

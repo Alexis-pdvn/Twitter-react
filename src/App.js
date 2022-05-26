@@ -1,12 +1,16 @@
 import './App.css';
-import Affichage from './react/affichage/Affichage';
-import Saisie from './react/saisie/Saisie';
+import Feed from './components/feed/feed';
+import Menu from './components/menu/menu';
+import Trend from './components/trend/trend';
 
 const App = () => {
   return (
     <>
-       <Saisie />
-       <Affichage />
+    <div className='container main'>
+       <Menu />
+       <Feed />
+       <Trend />
+    </div>
     </>
   );
 }
