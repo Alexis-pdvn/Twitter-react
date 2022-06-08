@@ -1,5 +1,5 @@
 import React from "react";
-
+import TwitterIcon from '@mui/icons-material/Twitter';
 class Menu extends React.Component {
 
     constructor(props) {
@@ -49,7 +49,10 @@ class Menu extends React.Component {
         return (
             <>
             <div className="sidebar">
+                {/* Icon de Twitter */}
+                    <TwitterIcon className="icon-Twitter"/>
                 <section>
+                    {/* option de Twitter */}
                     <ul>
                         {
                             this.state.menu.map((item, i) => (
