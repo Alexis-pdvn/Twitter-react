@@ -48,6 +48,7 @@ class Menu extends React.Component {
     render() {
         return (
             <>
+            <div className="sidebar">
                 <section>
                     <ul>
                         {
@@ -57,6 +58,7 @@ class Menu extends React.Component {
                         }
                     </ul>
                 </section>
+            </div>
             </>
         );
     }
