@@ -3,7 +3,7 @@ function SidebarOption({text,Icon}){
     return(      
                 <li className="menu_link" >                   
                     <Icon />
-                    <h3>{text}</h3>
+                    <p>{text}</p>
                 </li>            
     )
 }

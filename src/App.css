@@ -76,14 +76,27 @@ ul{
   border-radius: 9999px;
 }
 
+/** MENU **/
 .menu_link{
   color: white;
-  padding: 12px;
   border-radius: 9999px;
   display: flex;
   align-items: center; 
   cursor: pointer;
+  padding: 12px;
 }
+
+.menu_link p{
+  margin: 0px;
+  padding: 0px;
+  margin-left: 20px;
+  margin-right: 16px;
+}
+
+.menu_link > .MuiSvgIcon-root{
+  padding: 0px!important;
+}
+
 .sidebar{
   position: fixed;
   z-index: 1;
