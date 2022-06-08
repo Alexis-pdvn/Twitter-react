@@ -80,6 +80,9 @@ ul{
   color: white;
   padding: 12px;
   border-radius: 9999px;
+  display: flex;
+  align-items: center; 
+  cursor: pointer;
 }
 .sidebar{
   position: fixed;
@@ -93,6 +96,26 @@ ul{
   border-right: 1px solid var(--twitter-background);
   min-width: fit-content;
   overflow-y: scroll;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.menu_link > h2 {
+  font-weight: 800;
+  font-size: 20px;
+  margin-right: 20px;
+}
+.menu_link > .MuiSvgIcon-root {
+  padding: 20px;
+}
+.menu_link--active {
+  color: #1DA1F2;
+}
+.menu_link:hover {
+  background-color: #e8f5fe;
+  border-radius: 30px;
+  color: #1DA1F2;
+  transition: color 100ms ease-out;
 }
 .icon-Twitter{
   color: #1DA1F2;
