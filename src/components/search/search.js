@@ -68,7 +68,7 @@ AllName.push(this.state.results[i].name)
        
         return (
             <>
-            <div>
+            <div className="trend">
             <form>
                 <input className="search" onKeyPress={() => this.handleClick()} type="text" placeholder="Rechercher dans Twitter"></input>
                 
