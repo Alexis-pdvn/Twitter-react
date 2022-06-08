@@ -3,7 +3,11 @@ const Feed = () => {
     return (
         <>
             <section className="feed">
-                <h1>Home</h1>
+                <h2 className="feedh2">Accueil</h2>
+                <div className="feedinput">
+                    <input type="text" placeholder="Quoi de neuf ?"/>
+                    <button>Tweeter</button>
+                </div>
                 <MessageList/>
             </section>
         </>
