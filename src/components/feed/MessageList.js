@@ -29,7 +29,6 @@ class MessageList extends React.Component {
         } = this.state;
         return (
           <React.Fragment>
-          <h1>All User</h1>
           {
                 error ? <p>
           {
@@ -41,10 +40,9 @@ class MessageList extends React.Component {
                             body
                         } = user;
                         return (
-                        <div>
-                            <p>Titre: {title}</p>
+                        <div className='feeditemlist'>
+                            <p>User: {title}</p>
                             <p>Message: {body}</p>
-                            <hr />
                         </div>
                         );
                     })
