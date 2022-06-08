@@ -1,8 +1,10 @@
+import MessageList from "./MessageList";
 const Feed = () => {
     return (
         <>
             <section className="feed">
-                Feed
+                <h1>Home</h1>
+                <MessageList/>
             </section>
         </>
     );
