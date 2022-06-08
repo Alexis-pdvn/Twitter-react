@@ -29,7 +29,6 @@ class MessageList extends React.Component {
         } = this.state;
         return (
           <React.Fragment>
-          <h1>All User</h1>
           {
                 error ? <p>
           {
@@ -37,15 +36,13 @@ class MessageList extends React.Component {
                 } </p> : null}  {
                     users.map(user => {
                         const {
-                            userId,
                             title,
                             body
                         } = user;
                         return (
-                        <div key={userId}>
-                            <p>Titre: {title}</p>
+                        <div className='feeditemlist'>
+                            <p>User: {title}</p>
                             <p>Message: {body}</p>
-                            <hr />
                         </div>
                         );
                     })
