@@ -1,9 +1,11 @@
+import Search from "../search/search";
+import ResultSearch from "../resultSearch/resultSearch"
+
 const Trend = () => {
     return (
         <>
-            <section>
-                Trend
-            </section>
+            <Search/>
+            <ResultSearch/>
         </>
     );
 }
