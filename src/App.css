@@ -75,13 +75,14 @@ ul{
   border-radius: 9999px;
 }
 
+/** MENU **/
 .menu_link{
   color: white;
-  padding: 12px;
   border-radius: 9999px;
   display: flex;
   align-items: center; 
   cursor: pointer;
+  padding: 12px;
 }
 .sidebar {
   border-right: 1px solid var(--twitter-background);
