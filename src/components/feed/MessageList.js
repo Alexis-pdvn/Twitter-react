@@ -37,12 +37,11 @@ class MessageList extends React.Component {
                 } </p> : null}  {
                     users.map(user => {
                         const {
-                            userId,
                             title,
                             body
                         } = user;
                         return (
-                        <div key={userId}>
+                        <div>
                             <p>Titre: {title}</p>
                             <p>Message: {body}</p>
                             <hr />
