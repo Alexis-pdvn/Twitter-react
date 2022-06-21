@@ -1,52 +1,35 @@
 import React from 'react';
 
 class MessageList extends React.Component {
-
-      state = {
-        isLoading: true,
-        users: [],
-        error: null
-    };
   
-    getFetchUsers() {
-        this.setState({
-            loading: true
-        }, () => {
-            fetch("https://jsonplaceholder.typicode.com/posts").then(res => res.json()).then(result => this.setState({
-                loading: false,
-                users: result
-            })).catch(console.log);
-        });
-    }
-    componentDidMount() {
-        this.getFetchUsers();
-    }
+    //  getFetchUsers() {
+    //      this.setState({
+    //      }, () => {
+    //          fetch("https://jsonplaceholder.typicode.com/posts").then(res => res.json()).then(json =>this.setState({tweets:json}))({
+    //          }).catch(console.log);
+    //      });
+    //  }
+    //  componentDidMount() {
+    //      this.getFetchUsers();
+    //  }
   
-    render() {
-        const {
-            users,
-            error
-        } = this.state;
+render() {
+    let liste = this.props.tweets.map((item, index) => {
         return (
-          <React.Fragment>
-          {
-                error ? <p>
-          {
-                    error.message
-                } </p> : null}  {
-                    users.map(user => {
-                        const {
-                            title,
-                            body
-                        } = user;
-                        return (
-                        <div className='feeditemlist'>
-                            <p>User: {title}</p>
-                            <p>Message: {body}</p>
-                        </div>
-                        );
-                    })
-                } </React.Fragment> );
+            <>
+        <div className='feeditemlist'>
+            <p>User : { item.title }</p>
+            <p>Message : { item.body }</p>
+        </div>
+            </>
+        )
+    })
+
+    return (
+        <>
+            {liste}
+        </>
+    )
     }
   }
 export default MessageList;
